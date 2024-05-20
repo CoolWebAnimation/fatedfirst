@@ -1,13 +1,20 @@
+:root {
+  --yellow: #ffc629;
+  --light: #fff7d8;
+  --text: #454650;
+}
+
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: "Nunito";
 }
 
 #board {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -15,13 +22,200 @@ body {
 }
 
 .card {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
-  border-radius: 1%;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
   background-color: white;
-  transform: translateX(-50%) translateY(-50%) scale(0.95);
+  /* transform: translateX(-50%) translateY(-50%) scale(0.95); */
+}
+
+.bumble-screen {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+}
+
+.logo {
+  color: var(--yellow);
+  width: 40%;
+  margin: 0px auto 24px auto;
+}
+
+.content {
+  background-image: url("assets/bumble-img.jpg");
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center;
+  width: 95vw;
+  margin: 0 auto;
+  height: 85vh;
+  border-radius: 100px;
+  position: relative;
+}
+
+
+.description {
+  width: 100vw;
+  position: absolute;
+  bottom: 100px;
+  left: 64px;
+  color: var(--light);
+}
+
+.name {
+  font-size: 84px;
+  margin: 24px 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.work {
+  font-size: 48px;
+  padding: 0;
+  margin: 0;
+}
+
+.like {
+  position: absolute;
+  right: 140px;
+  bottom: -2px;
+  width: 200px;
+  height: 200px;
+  background: var(--yellow);
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  rotate: 90deg;
+}
+
+.like>* {
+  font-size: 100px;
+  rotate: -90deg;
+  position: absolute;
+  left: 22%;
+  top: 15%;
+}
+
+.question {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.screen-2 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.screen-2 p {
+  font-size: 64px;
+  width: 80vw;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+}
+
+.screen-3,
+.screen-4,
+.screen-5,
+.screen-6,
+.screen-7,
+.screen-8,
+.screen-9,
+.screen-10,
+.screen-11,
+.screen-12 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.15.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 95vw;
+  margin: 2vh auto 0 auto;
+  height: 85vh;
+  border-radius: 100px;
+}
+
+.word {
+  position: absolute;
+  bottom: 1vh;
+  font-size: 64px;
+  width: 80%;
+  left: 10%;
+  text-align: center;
+}
+
+.screen-4 {
+  background-image: url("assets/holding-hand.png");
+}
+
+.screen-5 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.25.jpeg");
+  height: 30%;
+  margin-top: 30%;
+}
+
+.screen-6 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.26.jpeg");
+  height: 30%;
+}
+
+.screen-7 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.20.jpeg");
+}
+
+.screen-8 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.18.jpeg");
+}
+
+.screen-9 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.23.jpeg");
+}
+
+.screen-10 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.21.jpeg");
+}
+
+.screen-11 {
+  background-image: url("assets/photo_2024-05-20\ 23.41.27.jpeg");
+}
+
+.final {
+  font-size: 64px;
+  width: 85vw;
+  height: 100vh;
+  margin: auto;
+}
+
+.final p {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: fit-content;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60vw;
+  margin: auto;
+  height: 15vh;
+}
+
+button {
+  width: 100%;
+  font-size: 48px;
+}
+
+#popover {
+  font-size: 64px;
+  padding: 16px;
+  width: 80vw;
+}
+
+#popover::backdrop {
+  background-image: linear-gradient(rgb(0 0 0/30%) 0 0);
 }
