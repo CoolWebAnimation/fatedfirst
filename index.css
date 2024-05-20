@@ -101,7 +101,7 @@ body {
 .question {
   font-size: 48px;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .screen-2 {
@@ -140,7 +140,7 @@ body {
 
 .word {
   position: absolute;
-  bottom: 1vh;
+  bottom: 5vh;
   font-size: 64px;
   width: 80%;
   left: 10%;
